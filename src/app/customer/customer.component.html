@@ -1,0 +1,24 @@
+<div class="container">
+<h3 style="text-align: center;padding-top: 0;">Customer Details</h3>
+<button type="button" class="btn btn-default"  routerLink='/addcustomer' >Add Customer</button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default"  (click)='delete()'>Delete Customer</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="alertData" [class.visible]="isVisible"> 
+    **No Rows Selected**
+  </div>
+<br>
+
+<ag-grid-angular
+style="width: 1020px;height: 87vh;"
+class="ag-theme-balham"
+[rowData] = "rowData"
+[columnDefs] = "columnDefs"
+[animateRows]= "true"
+[rowDragManaged] ="true"
+rowSelection="multiple"
+(gridReady)="onGridReady($event)"
+[stopEditingWhenCellsLoseFocus]="true"
+(cellValueChanged)="onCellValueChanged($event)"
+[frameworkComponents]="frameworkComponents"
+[suppressRowClickSelection]= "true"
+></ag-grid-angular>
+</div>

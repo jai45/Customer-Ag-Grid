@@ -1,0 +1,15 @@
+.alertData  {
+    height: 15px;
+    display: inline;
+    font-weight: bold;
+    background: rgb(245, 226, 226);
+    
+    color: #f04b4b;
+    transition:  all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  
+.visible {
+    opacity: 1;
+    transform: translateY(0.25rem);
+}

@@ -1,0 +1,6620 @@
+  addData(){
+    for(let i=0;i<this.jsonDataCustomer.length;i++)
+    {
+    this.customer = new Customer();
+    this.customer.customer_geographic_location=this.jsonDataCustomer[i].customer_geographic_location;
+    this.customer.customer_id= this.jsonDataCustomer[i].customer_id;
+    this.customer.customer_name = this.jsonDataCustomer[i].customer_name;
+    this.customer.customer_type = this.jsonDataCustomer[i].customer_type;
+    this.customerService.addCustomer(this.customer).subscribe((data)=>{
+      console.log(data);
+    },
+    (error)=>{console.log(error)}
+    );
+    }
+  }
+  jsonDataCustomer =[
+    {
+      "customer_name": "Moon",
+      "customer_id": 100,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Wendy",
+      "customer_id": 101,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mills",
+      "customer_id": 102,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Trevino",
+      "customer_id": 103,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lauri",
+      "customer_id": 104,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hubbard",
+      "customer_id": 105,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rich",
+      "customer_id": 106,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Daniels",
+      "customer_id": 107,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ophelia",
+      "customer_id": 108,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Katina",
+      "customer_id": 109,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Guerra",
+      "customer_id": 110,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Fay",
+      "customer_id": 111,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jasmine",
+      "customer_id": 112,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Baird",
+      "customer_id": 113,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tanisha",
+      "customer_id": 114,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Fletcher",
+      "customer_id": 115,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Heather",
+      "customer_id": 116,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Watts",
+      "customer_id": 117,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gordon",
+      "customer_id": 118,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Olson",
+      "customer_id": 119,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lesley",
+      "customer_id": 120,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ratliff",
+      "customer_id": 121,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Whitley",
+      "customer_id": 122,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Josefina",
+      "customer_id": 123,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nancy",
+      "customer_id": 124,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hobbs",
+      "customer_id": 125,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Baldwin",
+      "customer_id": 126,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lillian",
+      "customer_id": 127,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hoffman",
+      "customer_id": 128,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Julianne",
+      "customer_id": 129,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Vilma",
+      "customer_id": 130,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Amelia",
+      "customer_id": 131,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Duke",
+      "customer_id": 132,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carey",
+      "customer_id": 133,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Pamela",
+      "customer_id": 134,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Marta",
+      "customer_id": 135,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Foley",
+      "customer_id": 136,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sadie",
+      "customer_id": 137,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mathis",
+      "customer_id": 138,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Patrica",
+      "customer_id": 139,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kimberley",
+      "customer_id": 140,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Krystal",
+      "customer_id": 141,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Haynes",
+      "customer_id": 142,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hogan",
+      "customer_id": 143,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Irene",
+      "customer_id": 144,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Deloris",
+      "customer_id": 145,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Latasha",
+      "customer_id": 146,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Maura",
+      "customer_id": 147,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Katheryn",
+      "customer_id": 148,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jaime",
+      "customer_id": 149,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Isabelle",
+      "customer_id": 150,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Langley",
+      "customer_id": 151,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hillary",
+      "customer_id": 152,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Harper",
+      "customer_id": 153,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Concetta",
+      "customer_id": 154,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Patel",
+      "customer_id": 155,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ramos",
+      "customer_id": 156,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Barron",
+      "customer_id": 157,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Nicholson",
+      "customer_id": 158,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Betty",
+      "customer_id": 159,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jerri",
+      "customer_id": 160,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jodie",
+      "customer_id": 161,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Benson",
+      "customer_id": 162,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Miranda",
+      "customer_id": 163,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lane",
+      "customer_id": 164,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Stacy",
+      "customer_id": 165,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Conway",
+      "customer_id": 166,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hess",
+      "customer_id": 167,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Holloway",
+      "customer_id": 168,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Shelby",
+      "customer_id": 169,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lacey",
+      "customer_id": 170,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Baxter",
+      "customer_id": 171,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "May",
+      "customer_id": 172,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Warner",
+      "customer_id": 173,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ruth",
+      "customer_id": 174,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carolyn",
+      "customer_id": 175,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Alexandra",
+      "customer_id": 176,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Perkins",
+      "customer_id": 177,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gabrielle",
+      "customer_id": 178,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Callahan",
+      "customer_id": 179,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Cherie",
+      "customer_id": 180,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sweeney",
+      "customer_id": 181,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Trujillo",
+      "customer_id": 182,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Gross",
+      "customer_id": 183,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sheppard",
+      "customer_id": 184,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Boone",
+      "customer_id": 185,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carmela",
+      "customer_id": 186,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Clay",
+      "customer_id": 187,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rush",
+      "customer_id": 188,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Clarissa",
+      "customer_id": 189,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Castaneda",
+      "customer_id": 190,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lana",
+      "customer_id": 191,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Billie",
+      "customer_id": 192,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Bettye",
+      "customer_id": 193,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Walls",
+      "customer_id": 194,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Glenn",
+      "customer_id": 195,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mueller",
+      "customer_id": 196,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Leigh",
+      "customer_id": 197,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Spencer",
+      "customer_id": 198,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Patrick",
+      "customer_id": 199,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    }
+  ]
+  
+  data1000 = [
+    {
+      "customer_name": "West",
+      "customer_id": 100,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Robert",
+      "customer_id": 101,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Skinner",
+      "customer_id": 102,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lucy",
+      "customer_id": 103,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bowen",
+      "customer_id": 104,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hartman",
+      "customer_id": 105,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Melanie",
+      "customer_id": 106,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lucille",
+      "customer_id": 107,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Walters",
+      "customer_id": 108,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Josie",
+      "customer_id": 109,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nguyen",
+      "customer_id": 110,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elnora",
+      "customer_id": 111,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Morgan",
+      "customer_id": 112,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hood",
+      "customer_id": 113,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Colon",
+      "customer_id": 114,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rae",
+      "customer_id": 115,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Corine",
+      "customer_id": 116,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Leta",
+      "customer_id": 117,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Franks",
+      "customer_id": 118,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Whitney",
+      "customer_id": 119,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rios",
+      "customer_id": 120,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sondra",
+      "customer_id": 121,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lakisha",
+      "customer_id": 122,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lacey",
+      "customer_id": 123,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Dunn",
+      "customer_id": 124,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tucker",
+      "customer_id": 125,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Webb",
+      "customer_id": 126,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Bradshaw",
+      "customer_id": 127,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mcguire",
+      "customer_id": 128,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Brenda",
+      "customer_id": 129,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kay",
+      "customer_id": 130,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Walker",
+      "customer_id": 131,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Autumn",
+      "customer_id": 132,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Aimee",
+      "customer_id": 133,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hays",
+      "customer_id": 134,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Alford",
+      "customer_id": 135,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Stacie",
+      "customer_id": 136,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Pearson",
+      "customer_id": 137,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Craig",
+      "customer_id": 138,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sandra",
+      "customer_id": 139,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Landry",
+      "customer_id": 140,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Diana",
+      "customer_id": 141,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Joy",
+      "customer_id": 142,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lula",
+      "customer_id": 143,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Marisa",
+      "customer_id": 144,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Beverley",
+      "customer_id": 145,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kayla",
+      "customer_id": 146,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sonia",
+      "customer_id": 147,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Whitney",
+      "customer_id": 148,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Boyd",
+      "customer_id": 149,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Madeline",
+      "customer_id": 150,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Flowers",
+      "customer_id": 151,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lewis",
+      "customer_id": 152,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kerri",
+      "customer_id": 153,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Calhoun",
+      "customer_id": 154,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Santiago",
+      "customer_id": 155,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Booth",
+      "customer_id": 156,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rosa",
+      "customer_id": 157,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Koch",
+      "customer_id": 158,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Maura",
+      "customer_id": 159,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Witt",
+      "customer_id": 160,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bette",
+      "customer_id": 161,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carter",
+      "customer_id": 162,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Pittman",
+      "customer_id": 163,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Griffith",
+      "customer_id": 164,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Candy",
+      "customer_id": 165,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gentry",
+      "customer_id": 166,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Bobbie",
+      "customer_id": 167,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Fisher",
+      "customer_id": 168,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Parker",
+      "customer_id": 169,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Suarez",
+      "customer_id": 170,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Stacy",
+      "customer_id": 171,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Deloris",
+      "customer_id": 172,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Conner",
+      "customer_id": 173,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Grace",
+      "customer_id": 174,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Roy",
+      "customer_id": 175,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Vega",
+      "customer_id": 176,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Selena",
+      "customer_id": 177,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Earline",
+      "customer_id": 178,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hopkins",
+      "customer_id": 179,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Susanna",
+      "customer_id": 180,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Polly",
+      "customer_id": 181,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bond",
+      "customer_id": 182,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Luisa",
+      "customer_id": 183,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rose",
+      "customer_id": 184,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Henrietta",
+      "customer_id": 185,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Trujillo",
+      "customer_id": 186,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tamera",
+      "customer_id": 187,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gutierrez",
+      "customer_id": 188,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kent",
+      "customer_id": 189,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Walton",
+      "customer_id": 190,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gonzales",
+      "customer_id": 191,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Claire",
+      "customer_id": 192,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Maureen",
+      "customer_id": 193,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lea",
+      "customer_id": 194,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Addie",
+      "customer_id": 195,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Marlene",
+      "customer_id": 196,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Franco",
+      "customer_id": 197,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Shirley",
+      "customer_id": 198,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Winifred",
+      "customer_id": 199,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Dillon",
+      "customer_id": 200,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Marjorie",
+      "customer_id": 201,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cherry",
+      "customer_id": 202,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lottie",
+      "customer_id": 203,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Serrano",
+      "customer_id": 204,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Thomas",
+      "customer_id": 205,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jana",
+      "customer_id": 206,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jacobson",
+      "customer_id": 207,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Langley",
+      "customer_id": 208,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Bryant",
+      "customer_id": 209,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Watson",
+      "customer_id": 210,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kendra",
+      "customer_id": 211,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carpenter",
+      "customer_id": 212,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hughes",
+      "customer_id": 213,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kidd",
+      "customer_id": 214,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Juanita",
+      "customer_id": 215,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Margarita",
+      "customer_id": 216,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cervantes",
+      "customer_id": 217,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sharp",
+      "customer_id": 218,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Black",
+      "customer_id": 219,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Crosby",
+      "customer_id": 220,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Angelia",
+      "customer_id": 221,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Workman",
+      "customer_id": 222,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mayo",
+      "customer_id": 223,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Logan",
+      "customer_id": 224,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tina",
+      "customer_id": 225,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Beasley",
+      "customer_id": 226,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gracie",
+      "customer_id": 227,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Coleman",
+      "customer_id": 228,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Margo",
+      "customer_id": 229,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Little",
+      "customer_id": 230,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Margie",
+      "customer_id": 231,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Luz",
+      "customer_id": 232,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Merle",
+      "customer_id": 233,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Noel",
+      "customer_id": 234,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Owens",
+      "customer_id": 235,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Susie",
+      "customer_id": 236,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jolene",
+      "customer_id": 237,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jennings",
+      "customer_id": 238,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Angelita",
+      "customer_id": 239,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Medina",
+      "customer_id": 240,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Goldie",
+      "customer_id": 241,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kramer",
+      "customer_id": 242,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Janis",
+      "customer_id": 243,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lynda",
+      "customer_id": 244,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kate",
+      "customer_id": 245,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cheri",
+      "customer_id": 246,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kristin",
+      "customer_id": 247,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Janette",
+      "customer_id": 248,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Adams",
+      "customer_id": 249,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Belinda",
+      "customer_id": 250,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kline",
+      "customer_id": 251,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cooper",
+      "customer_id": 252,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Clemons",
+      "customer_id": 253,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Heidi",
+      "customer_id": 254,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sonya",
+      "customer_id": 255,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Gallagher",
+      "customer_id": 256,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Robertson",
+      "customer_id": 257,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mccarty",
+      "customer_id": 258,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Alana",
+      "customer_id": 259,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hess",
+      "customer_id": 260,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sharpe",
+      "customer_id": 261,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Holly",
+      "customer_id": 262,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Blanchard",
+      "customer_id": 263,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Castaneda",
+      "customer_id": 264,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Burgess",
+      "customer_id": 265,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jennie",
+      "customer_id": 266,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bender",
+      "customer_id": 267,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sadie",
+      "customer_id": 268,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hancock",
+      "customer_id": 269,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Shelly",
+      "customer_id": 270,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carolyn",
+      "customer_id": 271,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jocelyn",
+      "customer_id": 272,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rollins",
+      "customer_id": 273,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nieves",
+      "customer_id": 274,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Stone",
+      "customer_id": 275,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Fields",
+      "customer_id": 276,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Camacho",
+      "customer_id": 277,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bowers",
+      "customer_id": 278,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Estrada",
+      "customer_id": 279,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Short",
+      "customer_id": 280,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Chavez",
+      "customer_id": 281,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Johnson",
+      "customer_id": 282,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Simpson",
+      "customer_id": 283,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Luna",
+      "customer_id": 284,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Le",
+      "customer_id": 285,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Buchanan",
+      "customer_id": 286,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lorena",
+      "customer_id": 287,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Pickett",
+      "customer_id": 288,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mollie",
+      "customer_id": 289,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kristi",
+      "customer_id": 290,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cobb",
+      "customer_id": 291,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Claudine",
+      "customer_id": 292,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ester",
+      "customer_id": 293,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ayala",
+      "customer_id": 294,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Macias",
+      "customer_id": 295,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Wilda",
+      "customer_id": 296,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Briana",
+      "customer_id": 297,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Fitzgerald",
+      "customer_id": 298,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Daniels",
+      "customer_id": 299,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Olson",
+      "customer_id": 300,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Geneva",
+      "customer_id": 301,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Boyer",
+      "customer_id": 302,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Edwards",
+      "customer_id": 303,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Cecelia",
+      "customer_id": 304,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Brock",
+      "customer_id": 305,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Oliver",
+      "customer_id": 306,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lila",
+      "customer_id": 307,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Crystal",
+      "customer_id": 308,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Shauna",
+      "customer_id": 309,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Bryan",
+      "customer_id": 310,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rosanne",
+      "customer_id": 311,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rowe",
+      "customer_id": 312,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Elma",
+      "customer_id": 313,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Harvey",
+      "customer_id": 314,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Daphne",
+      "customer_id": 315,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Maynard",
+      "customer_id": 316,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mallory",
+      "customer_id": 317,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sanders",
+      "customer_id": 318,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Earlene",
+      "customer_id": 319,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tara",
+      "customer_id": 320,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Blankenship",
+      "customer_id": 321,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Diann",
+      "customer_id": 322,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Geraldine",
+      "customer_id": 323,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Twila",
+      "customer_id": 324,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Pearl",
+      "customer_id": 325,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mcdowell",
+      "customer_id": 326,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jefferson",
+      "customer_id": 327,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Zelma",
+      "customer_id": 328,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Wheeler",
+      "customer_id": 329,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Morse",
+      "customer_id": 330,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sheryl",
+      "customer_id": 331,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Williamson",
+      "customer_id": 332,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Soto",
+      "customer_id": 333,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Henson",
+      "customer_id": 334,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Briggs",
+      "customer_id": 335,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Natasha",
+      "customer_id": 336,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Edith",
+      "customer_id": 337,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Anastasia",
+      "customer_id": 338,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Dawn",
+      "customer_id": 339,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Susanne",
+      "customer_id": 340,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nita",
+      "customer_id": 341,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rivers",
+      "customer_id": 342,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hurst",
+      "customer_id": 343,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Doyle",
+      "customer_id": 344,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elisa",
+      "customer_id": 345,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Goodman",
+      "customer_id": 346,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Georgette",
+      "customer_id": 347,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Daisy",
+      "customer_id": 348,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Bridges",
+      "customer_id": 349,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ramos",
+      "customer_id": 350,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ofelia",
+      "customer_id": 351,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Dale",
+      "customer_id": 352,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hilda",
+      "customer_id": 353,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Matthews",
+      "customer_id": 354,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Marianne",
+      "customer_id": 355,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ada",
+      "customer_id": 356,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Dorsey",
+      "customer_id": 357,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Alexander",
+      "customer_id": 358,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Francesca",
+      "customer_id": 359,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Haynes",
+      "customer_id": 360,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Alyson",
+      "customer_id": 361,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Valentine",
+      "customer_id": 362,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Penny",
+      "customer_id": 363,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Morin",
+      "customer_id": 364,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Blackwell",
+      "customer_id": 365,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Michael",
+      "customer_id": 366,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Allyson",
+      "customer_id": 367,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hannah",
+      "customer_id": 368,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rachel",
+      "customer_id": 369,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Taylor",
+      "customer_id": 370,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ora",
+      "customer_id": 371,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gates",
+      "customer_id": 372,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Heather",
+      "customer_id": 373,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kelsey",
+      "customer_id": 374,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Shepard",
+      "customer_id": 375,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mullen",
+      "customer_id": 376,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elba",
+      "customer_id": 377,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gina",
+      "customer_id": 378,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Branch",
+      "customer_id": 379,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Stokes",
+      "customer_id": 380,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Chan",
+      "customer_id": 381,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Dawson",
+      "customer_id": 382,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Tyler",
+      "customer_id": 383,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lane",
+      "customer_id": 384,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mabel",
+      "customer_id": 385,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rhonda",
+      "customer_id": 386,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kathie",
+      "customer_id": 387,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nelson",
+      "customer_id": 388,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Aida",
+      "customer_id": 389,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Leticia",
+      "customer_id": 390,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Donovan",
+      "customer_id": 391,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Dickson",
+      "customer_id": 392,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Letitia",
+      "customer_id": 393,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hyde",
+      "customer_id": 394,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Magdalena",
+      "customer_id": 395,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tyson",
+      "customer_id": 396,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Karin",
+      "customer_id": 397,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Alexandra",
+      "customer_id": 398,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tonia",
+      "customer_id": 399,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Blevins",
+      "customer_id": 400,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jodi",
+      "customer_id": 401,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hill",
+      "customer_id": 402,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Marylou",
+      "customer_id": 403,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Delores",
+      "customer_id": 404,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Guzman",
+      "customer_id": 405,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Isabel",
+      "customer_id": 406,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Guadalupe",
+      "customer_id": 407,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Thompson",
+      "customer_id": 408,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ida",
+      "customer_id": 409,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Corinne",
+      "customer_id": 410,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Meyer",
+      "customer_id": 411,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carney",
+      "customer_id": 412,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Alexis",
+      "customer_id": 413,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ellen",
+      "customer_id": 414,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Acevedo",
+      "customer_id": 415,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Velasquez",
+      "customer_id": 416,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Perkins",
+      "customer_id": 417,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Raymond",
+      "customer_id": 418,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Essie",
+      "customer_id": 419,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Buckner",
+      "customer_id": 420,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kitty",
+      "customer_id": 421,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gwen",
+      "customer_id": 422,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Battle",
+      "customer_id": 423,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Therese",
+      "customer_id": 424,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tanya",
+      "customer_id": 425,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Schneider",
+      "customer_id": 426,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elinor",
+      "customer_id": 427,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jennifer",
+      "customer_id": 428,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nell",
+      "customer_id": 429,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Terra",
+      "customer_id": 430,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elaine",
+      "customer_id": 431,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Katherine",
+      "customer_id": 432,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Munoz",
+      "customer_id": 433,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Anne",
+      "customer_id": 434,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Francisca",
+      "customer_id": 435,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mcfarland",
+      "customer_id": 436,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nina",
+      "customer_id": 437,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rice",
+      "customer_id": 438,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jerry",
+      "customer_id": 439,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mathews",
+      "customer_id": 440,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Clay",
+      "customer_id": 441,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lynch",
+      "customer_id": 442,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lynn",
+      "customer_id": 443,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Dina",
+      "customer_id": 444,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Wise",
+      "customer_id": 445,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Christa",
+      "customer_id": 446,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ferrell",
+      "customer_id": 447,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Brittney",
+      "customer_id": 448,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Wiggins",
+      "customer_id": 449,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Thelma",
+      "customer_id": 450,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Harper",
+      "customer_id": 451,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Huffman",
+      "customer_id": 452,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hardin",
+      "customer_id": 453,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Wilma",
+      "customer_id": 454,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Roberson",
+      "customer_id": 455,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hampton",
+      "customer_id": 456,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Monica",
+      "customer_id": 457,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Potts",
+      "customer_id": 458,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Marian",
+      "customer_id": 459,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Janice",
+      "customer_id": 460,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kim",
+      "customer_id": 461,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Emilia",
+      "customer_id": 462,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Eileen",
+      "customer_id": 463,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Frieda",
+      "customer_id": 464,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hull",
+      "customer_id": 465,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kerry",
+      "customer_id": 466,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sybil",
+      "customer_id": 467,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gregory",
+      "customer_id": 468,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Wilkinson",
+      "customer_id": 469,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Finch",
+      "customer_id": 470,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Craft",
+      "customer_id": 471,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mcbride",
+      "customer_id": 472,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Vonda",
+      "customer_id": 473,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Eva",
+      "customer_id": 474,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Adrian",
+      "customer_id": 475,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Noelle",
+      "customer_id": 476,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Howell",
+      "customer_id": 477,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Faulkner",
+      "customer_id": 478,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nona",
+      "customer_id": 479,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kelley",
+      "customer_id": 480,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Amparo",
+      "customer_id": 481,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tammie",
+      "customer_id": 482,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Eaton",
+      "customer_id": 483,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Delgado",
+      "customer_id": 484,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Reilly",
+      "customer_id": 485,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Morales",
+      "customer_id": 486,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Odonnell",
+      "customer_id": 487,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Naomi",
+      "customer_id": 488,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hogan",
+      "customer_id": 489,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Middleton",
+      "customer_id": 490,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Alta",
+      "customer_id": 491,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Day",
+      "customer_id": 492,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Augusta",
+      "customer_id": 493,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Patrice",
+      "customer_id": 494,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sheena",
+      "customer_id": 495,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Brigitte",
+      "customer_id": 496,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ford",
+      "customer_id": 497,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Johns",
+      "customer_id": 498,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Claudia",
+      "customer_id": 499,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Roman",
+      "customer_id": 500,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Myrtle",
+      "customer_id": 501,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mercer",
+      "customer_id": 502,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Olivia",
+      "customer_id": 503,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Millie",
+      "customer_id": 504,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Atkinson",
+      "customer_id": 505,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Virgie",
+      "customer_id": 506,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Christi",
+      "customer_id": 507,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mann",
+      "customer_id": 508,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kellie",
+      "customer_id": 509,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lloyd",
+      "customer_id": 510,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sutton",
+      "customer_id": 511,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Laurie",
+      "customer_id": 512,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Graham",
+      "customer_id": 513,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Louella",
+      "customer_id": 514,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Candace",
+      "customer_id": 515,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Rosalind",
+      "customer_id": 516,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Boyle",
+      "customer_id": 517,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Myers",
+      "customer_id": 518,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gray",
+      "customer_id": 519,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Erika",
+      "customer_id": 520,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Brady",
+      "customer_id": 521,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carroll",
+      "customer_id": 522,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Poole",
+      "customer_id": 523,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Snyder",
+      "customer_id": 524,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Whitehead",
+      "customer_id": 525,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carver",
+      "customer_id": 526,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Maribel",
+      "customer_id": 527,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Reyes",
+      "customer_id": 528,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Beatrice",
+      "customer_id": 529,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Woodward",
+      "customer_id": 530,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Spencer",
+      "customer_id": 531,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ryan",
+      "customer_id": 532,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Newman",
+      "customer_id": 533,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ochoa",
+      "customer_id": 534,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Grimes",
+      "customer_id": 535,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tami",
+      "customer_id": 536,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nancy",
+      "customer_id": 537,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Cherie",
+      "customer_id": 538,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Doreen",
+      "customer_id": 539,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Summer",
+      "customer_id": 540,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Rich",
+      "customer_id": 541,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Maude",
+      "customer_id": 542,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Evangelina",
+      "customer_id": 543,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Gilmore",
+      "customer_id": 544,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sharron",
+      "customer_id": 545,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Esperanza",
+      "customer_id": 546,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Frances",
+      "customer_id": 547,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Camille",
+      "customer_id": 548,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tammy",
+      "customer_id": 549,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "York",
+      "customer_id": 550,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lori",
+      "customer_id": 551,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Renee",
+      "customer_id": 552,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Flores",
+      "customer_id": 553,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tanner",
+      "customer_id": 554,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jenny",
+      "customer_id": 555,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sheila",
+      "customer_id": 556,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Winters",
+      "customer_id": 557,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Darcy",
+      "customer_id": 558,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Paulette",
+      "customer_id": 559,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rita",
+      "customer_id": 560,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Wilkins",
+      "customer_id": 561,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Gonzalez",
+      "customer_id": 562,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Horn",
+      "customer_id": 563,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rene",
+      "customer_id": 564,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cohen",
+      "customer_id": 565,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sears",
+      "customer_id": 566,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Valerie",
+      "customer_id": 567,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Melba",
+      "customer_id": 568,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Teresa",
+      "customer_id": 569,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Becker",
+      "customer_id": 570,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Larsen",
+      "customer_id": 571,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lilly",
+      "customer_id": 572,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Durham",
+      "customer_id": 573,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Montoya",
+      "customer_id": 574,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Odessa",
+      "customer_id": 575,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Malone",
+      "customer_id": 576,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Stanton",
+      "customer_id": 577,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Bruce",
+      "customer_id": 578,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Marquez",
+      "customer_id": 579,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sharlene",
+      "customer_id": 580,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Tracie",
+      "customer_id": 581,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hopper",
+      "customer_id": 582,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Manuela",
+      "customer_id": 583,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Norris",
+      "customer_id": 584,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Roxie",
+      "customer_id": 585,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Tiffany",
+      "customer_id": 586,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Webster",
+      "customer_id": 587,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Amber",
+      "customer_id": 588,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Enid",
+      "customer_id": 589,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Esmeralda",
+      "customer_id": 590,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sweet",
+      "customer_id": 591,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ramona",
+      "customer_id": 592,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Harriet",
+      "customer_id": 593,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Celia",
+      "customer_id": 594,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Toni",
+      "customer_id": 595,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lowe",
+      "customer_id": 596,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ratliff",
+      "customer_id": 597,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bonnie",
+      "customer_id": 598,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Dianne",
+      "customer_id": 599,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Keller",
+      "customer_id": 600,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Annette",
+      "customer_id": 601,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Estella",
+      "customer_id": 602,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Billie",
+      "customer_id": 603,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Everett",
+      "customer_id": 604,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Julie",
+      "customer_id": 605,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Knight",
+      "customer_id": 606,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Christina",
+      "customer_id": 607,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Irwin",
+      "customer_id": 608,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Laverne",
+      "customer_id": 609,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Walter",
+      "customer_id": 610,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Cole",
+      "customer_id": 611,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Audrey",
+      "customer_id": 612,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rochelle",
+      "customer_id": 613,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Frazier",
+      "customer_id": 614,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Wendy",
+      "customer_id": 615,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jackie",
+      "customer_id": 616,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jessie",
+      "customer_id": 617,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Galloway",
+      "customer_id": 618,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lenora",
+      "customer_id": 619,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Clayton",
+      "customer_id": 620,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elisabeth",
+      "customer_id": 621,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tran",
+      "customer_id": 622,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Delaney",
+      "customer_id": 623,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Best",
+      "customer_id": 624,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ava",
+      "customer_id": 625,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Waller",
+      "customer_id": 626,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Russell",
+      "customer_id": 627,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Murray",
+      "customer_id": 628,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mcdonald",
+      "customer_id": 629,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lee",
+      "customer_id": 630,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Fowler",
+      "customer_id": 631,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Etta",
+      "customer_id": 632,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kathleen",
+      "customer_id": 633,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Loretta",
+      "customer_id": 634,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Bernard",
+      "customer_id": 635,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Weiss",
+      "customer_id": 636,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Miller",
+      "customer_id": 637,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jeannie",
+      "customer_id": 638,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Taylor",
+      "customer_id": 639,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Andrews",
+      "customer_id": 640,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Donaldson",
+      "customer_id": 641,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Barron",
+      "customer_id": 642,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Alissa",
+      "customer_id": 643,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Trisha",
+      "customer_id": 644,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kelly",
+      "customer_id": 645,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Wolfe",
+      "customer_id": 646,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Darla",
+      "customer_id": 647,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Graciela",
+      "customer_id": 648,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Barbra",
+      "customer_id": 649,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Leona",
+      "customer_id": 650,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Rosella",
+      "customer_id": 651,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Baker",
+      "customer_id": 652,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Shepherd",
+      "customer_id": 653,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Constance",
+      "customer_id": 654,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Karla",
+      "customer_id": 655,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cleo",
+      "customer_id": 656,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jenna",
+      "customer_id": 657,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Liliana",
+      "customer_id": 658,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Marisol",
+      "customer_id": 659,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mendoza",
+      "customer_id": 660,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ortiz",
+      "customer_id": 661,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Yvette",
+      "customer_id": 662,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Josefa",
+      "customer_id": 663,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Meadows",
+      "customer_id": 664,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Talley",
+      "customer_id": 665,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tessa",
+      "customer_id": 666,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Vance",
+      "customer_id": 667,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mccormick",
+      "customer_id": 668,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Monique",
+      "customer_id": 669,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Alvarez",
+      "customer_id": 670,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Joanne",
+      "customer_id": 671,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sharon",
+      "customer_id": 672,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rose",
+      "customer_id": 673,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cortez",
+      "customer_id": 674,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rosalie",
+      "customer_id": 675,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bernadette",
+      "customer_id": 676,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Roxanne",
+      "customer_id": 677,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mckee",
+      "customer_id": 678,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Estela",
+      "customer_id": 679,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mclaughlin",
+      "customer_id": 680,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carey",
+      "customer_id": 681,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jessica",
+      "customer_id": 682,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Christy",
+      "customer_id": 683,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carissa",
+      "customer_id": 684,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carla",
+      "customer_id": 685,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Estelle",
+      "customer_id": 686,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Decker",
+      "customer_id": 687,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hernandez",
+      "customer_id": 688,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Fry",
+      "customer_id": 689,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Robles",
+      "customer_id": 690,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Chelsea",
+      "customer_id": 691,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Francine",
+      "customer_id": 692,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Harmon",
+      "customer_id": 693,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Joanna",
+      "customer_id": 694,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Armstrong",
+      "customer_id": 695,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carole",
+      "customer_id": 696,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hart",
+      "customer_id": 697,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hilary",
+      "customer_id": 698,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Watkins",
+      "customer_id": 699,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lakeisha",
+      "customer_id": 700,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Elena",
+      "customer_id": 701,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lourdes",
+      "customer_id": 702,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cathy",
+      "customer_id": 703,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "George",
+      "customer_id": 704,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kimberly",
+      "customer_id": 705,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Peck",
+      "customer_id": 706,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Felecia",
+      "customer_id": 707,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cox",
+      "customer_id": 708,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Finley",
+      "customer_id": 709,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Brooks",
+      "customer_id": 710,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ballard",
+      "customer_id": 711,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mildred",
+      "customer_id": 712,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Socorro",
+      "customer_id": 713,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bridget",
+      "customer_id": 714,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ella",
+      "customer_id": 715,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Benton",
+      "customer_id": 716,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Coleen",
+      "customer_id": 717,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Veronica",
+      "customer_id": 718,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Imogene",
+      "customer_id": 719,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Romero",
+      "customer_id": 720,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Abigail",
+      "customer_id": 721,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Angie",
+      "customer_id": 722,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Deana",
+      "customer_id": 723,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Priscilla",
+      "customer_id": 724,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sellers",
+      "customer_id": 725,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Julia",
+      "customer_id": 726,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Fannie",
+      "customer_id": 727,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Pansy",
+      "customer_id": 728,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Abby",
+      "customer_id": 729,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Welch",
+      "customer_id": 730,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Catalina",
+      "customer_id": 731,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Downs",
+      "customer_id": 732,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Janet",
+      "customer_id": 733,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Leah",
+      "customer_id": 734,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Leonard",
+      "customer_id": 735,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Candice",
+      "customer_id": 736,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Shannon",
+      "customer_id": 737,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mccall",
+      "customer_id": 738,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Allie",
+      "customer_id": 739,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tonya",
+      "customer_id": 740,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ramsey",
+      "customer_id": 741,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gertrude",
+      "customer_id": 742,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Angelina",
+      "customer_id": 743,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hodge",
+      "customer_id": 744,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Corrine",
+      "customer_id": 745,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Amalia",
+      "customer_id": 746,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sara",
+      "customer_id": 747,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Holcomb",
+      "customer_id": 748,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Bauer",
+      "customer_id": 749,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rhea",
+      "customer_id": 750,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Carrillo",
+      "customer_id": 751,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Roseann",
+      "customer_id": 752,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Joyce",
+      "customer_id": 753,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Haley",
+      "customer_id": 754,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Deidre",
+      "customer_id": 755,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Baxter",
+      "customer_id": 756,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Clark",
+      "customer_id": 757,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ola",
+      "customer_id": 758,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Banks",
+      "customer_id": 759,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Compton",
+      "customer_id": 760,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Bentley",
+      "customer_id": 761,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ferguson",
+      "customer_id": 762,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Erin",
+      "customer_id": 763,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Bright",
+      "customer_id": 764,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Head",
+      "customer_id": 765,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Susan",
+      "customer_id": 766,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jeanie",
+      "customer_id": 767,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Deann",
+      "customer_id": 768,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ana",
+      "customer_id": 769,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Silvia",
+      "customer_id": 770,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Annmarie",
+      "customer_id": 771,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hewitt",
+      "customer_id": 772,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Deanne",
+      "customer_id": 773,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Meghan",
+      "customer_id": 774,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cooke",
+      "customer_id": 775,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Carey",
+      "customer_id": 776,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lucile",
+      "customer_id": 777,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cassie",
+      "customer_id": 778,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hillary",
+      "customer_id": 779,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kemp",
+      "customer_id": 780,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Debra",
+      "customer_id": 781,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Beard",
+      "customer_id": 782,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Verna",
+      "customer_id": 783,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Betsy",
+      "customer_id": 784,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Casey",
+      "customer_id": 785,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Angelique",
+      "customer_id": 786,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Danielle",
+      "customer_id": 787,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rena",
+      "customer_id": 788,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Higgins",
+      "customer_id": 789,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Betty",
+      "customer_id": 790,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Roth",
+      "customer_id": 791,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Chris",
+      "customer_id": 792,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lesa",
+      "customer_id": 793,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ethel",
+      "customer_id": 794,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Josefina",
+      "customer_id": 795,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Guerrero",
+      "customer_id": 796,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hawkins",
+      "customer_id": 797,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Krystal",
+      "customer_id": 798,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Walls",
+      "customer_id": 799,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kristie",
+      "customer_id": 800,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Nunez",
+      "customer_id": 801,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Cardenas",
+      "customer_id": 802,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Cline",
+      "customer_id": 803,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Aguirre",
+      "customer_id": 804,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lavonne",
+      "customer_id": 805,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Juliet",
+      "customer_id": 806,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Pierce",
+      "customer_id": 807,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cantrell",
+      "customer_id": 808,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Alicia",
+      "customer_id": 809,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mcintosh",
+      "customer_id": 810,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Knowles",
+      "customer_id": 811,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Klein",
+      "customer_id": 812,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mona",
+      "customer_id": 813,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Michele",
+      "customer_id": 814,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Faye",
+      "customer_id": 815,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gallegos",
+      "customer_id": 816,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Nixon",
+      "customer_id": 817,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Roberta",
+      "customer_id": 818,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Wanda",
+      "customer_id": 819,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rachael",
+      "customer_id": 820,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Fitzpatrick",
+      "customer_id": 821,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nash",
+      "customer_id": 822,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Willie",
+      "customer_id": 823,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Houston",
+      "customer_id": 824,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Guerra",
+      "customer_id": 825,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tamra",
+      "customer_id": 826,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Vincent",
+      "customer_id": 827,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Tammi",
+      "customer_id": 828,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Carmella",
+      "customer_id": 829,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Freeman",
+      "customer_id": 830,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Harrington",
+      "customer_id": 831,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Odom",
+      "customer_id": 832,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Grant",
+      "customer_id": 833,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Melisa",
+      "customer_id": 834,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nikki",
+      "customer_id": 835,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Franklin",
+      "customer_id": 836,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Vicky",
+      "customer_id": 837,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Conley",
+      "customer_id": 838,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kathy",
+      "customer_id": 839,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Warner",
+      "customer_id": 840,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Valencia",
+      "customer_id": 841,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Amanda",
+      "customer_id": 842,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Trevino",
+      "customer_id": 843,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Booker",
+      "customer_id": 844,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Montgomery",
+      "customer_id": 845,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kristine",
+      "customer_id": 846,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Reeves",
+      "customer_id": 847,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Judy",
+      "customer_id": 848,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Florine",
+      "customer_id": 849,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Marcy",
+      "customer_id": 850,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Vaughan",
+      "customer_id": 851,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Helen",
+      "customer_id": 852,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Eve",
+      "customer_id": 853,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lynn",
+      "customer_id": 854,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Meredith",
+      "customer_id": 855,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Keisha",
+      "customer_id": 856,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jeanne",
+      "customer_id": 857,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Leonor",
+      "customer_id": 858,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sherman",
+      "customer_id": 859,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Claudette",
+      "customer_id": 860,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Alyce",
+      "customer_id": 861,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Alfreda",
+      "customer_id": 862,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Perez",
+      "customer_id": 863,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jacobs",
+      "customer_id": 864,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hall",
+      "customer_id": 865,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Molly",
+      "customer_id": 866,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Marina",
+      "customer_id": 867,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Thornton",
+      "customer_id": 868,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Eula",
+      "customer_id": 869,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Gamble",
+      "customer_id": 870,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Barr",
+      "customer_id": 871,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Isabella",
+      "customer_id": 872,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Courtney",
+      "customer_id": 873,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mueller",
+      "customer_id": 874,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nola",
+      "customer_id": 875,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Erica",
+      "customer_id": 876,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mary",
+      "customer_id": 877,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lyons",
+      "customer_id": 878,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rosetta",
+      "customer_id": 879,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jayne",
+      "customer_id": 880,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Charlene",
+      "customer_id": 881,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lambert",
+      "customer_id": 882,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Jewell",
+      "customer_id": 883,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Robbie",
+      "customer_id": 884,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Yates",
+      "customer_id": 885,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Perry",
+      "customer_id": 886,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Vicki",
+      "customer_id": 887,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Stafford",
+      "customer_id": 888,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Henry",
+      "customer_id": 889,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Britney",
+      "customer_id": 890,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Marks",
+      "customer_id": 891,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Shana",
+      "customer_id": 892,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Britt",
+      "customer_id": 893,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Green",
+      "customer_id": 894,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Dorothy",
+      "customer_id": 895,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lidia",
+      "customer_id": 896,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lamb",
+      "customer_id": 897,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elsa",
+      "customer_id": 898,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Barrera",
+      "customer_id": 899,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lilia",
+      "customer_id": 900,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Oneil",
+      "customer_id": 901,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hendricks",
+      "customer_id": 902,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Evelyn",
+      "customer_id": 903,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Minerva",
+      "customer_id": 904,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Randi",
+      "customer_id": 905,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Whitfield",
+      "customer_id": 906,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Stuart",
+      "customer_id": 907,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Peters",
+      "customer_id": 908,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Margaret",
+      "customer_id": 909,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Stewart",
+      "customer_id": 910,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lauri",
+      "customer_id": 911,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Brennan",
+      "customer_id": 912,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Regina",
+      "customer_id": 913,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Darlene",
+      "customer_id": 914,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lupe",
+      "customer_id": 915,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Joyner",
+      "customer_id": 916,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Alston",
+      "customer_id": 917,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mcintyre",
+      "customer_id": 918,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ray",
+      "customer_id": 919,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sawyer",
+      "customer_id": 920,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Noble",
+      "customer_id": 921,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hester",
+      "customer_id": 922,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mai",
+      "customer_id": 923,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Robinson",
+      "customer_id": 924,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Patricia",
+      "customer_id": 925,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jan",
+      "customer_id": 926,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Carson",
+      "customer_id": 927,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Becky",
+      "customer_id": 928,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Whitaker",
+      "customer_id": 929,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Beryl",
+      "customer_id": 930,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Sue",
+      "customer_id": 931,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Richmond",
+      "customer_id": 932,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Chen",
+      "customer_id": 933,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lillie",
+      "customer_id": 934,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Vasquez",
+      "customer_id": 935,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Carr",
+      "customer_id": 936,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jannie",
+      "customer_id": 937,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mercado",
+      "customer_id": 938,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Malinda",
+      "customer_id": 939,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Savannah",
+      "customer_id": 940,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Frost",
+      "customer_id": 941,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lawrence",
+      "customer_id": 942,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Ayers",
+      "customer_id": 943,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Marion",
+      "customer_id": 944,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Vera",
+      "customer_id": 945,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Erna",
+      "customer_id": 946,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Duffy",
+      "customer_id": 947,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hendrix",
+      "customer_id": 948,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mayer",
+      "customer_id": 949,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Fulton",
+      "customer_id": 950,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Patterson",
+      "customer_id": 951,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Velma",
+      "customer_id": 952,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Rojas",
+      "customer_id": 953,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Goodwin",
+      "customer_id": 954,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Nelda",
+      "customer_id": 955,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Wooten",
+      "customer_id": 956,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Stefanie",
+      "customer_id": 957,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Raquel",
+      "customer_id": 958,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hahn",
+      "customer_id": 959,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Pollard",
+      "customer_id": 960,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cooley",
+      "customer_id": 961,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Aisha",
+      "customer_id": 962,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Orr",
+      "customer_id": 963,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Baird",
+      "customer_id": 964,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Elise",
+      "customer_id": 965,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Summers",
+      "customer_id": 966,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bass",
+      "customer_id": 967,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lancaster",
+      "customer_id": 968,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Dodson",
+      "customer_id": 969,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sweeney",
+      "customer_id": 970,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Kara",
+      "customer_id": 971,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lelia",
+      "customer_id": 972,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ashley",
+      "customer_id": 973,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Debbie",
+      "customer_id": 974,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mcleod",
+      "customer_id": 975,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Reese",
+      "customer_id": 976,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Trudy",
+      "customer_id": 977,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Avila",
+      "customer_id": 978,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Duncan",
+      "customer_id": 979,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lela",
+      "customer_id": 980,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ruth",
+      "customer_id": 981,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Milagros",
+      "customer_id": 982,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Letha",
+      "customer_id": 983,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "David",
+      "customer_id": 984,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Gross",
+      "customer_id": 985,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Maxine",
+      "customer_id": 986,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lindsey",
+      "customer_id": 987,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Greta",
+      "customer_id": 988,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Phillips",
+      "customer_id": 989,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Owen",
+      "customer_id": 990,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Browning",
+      "customer_id": 991,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Rosario",
+      "customer_id": 992,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Campos",
+      "customer_id": 993,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Harrell",
+      "customer_id": 994,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Ilene",
+      "customer_id": 995,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Annabelle",
+      "customer_id": 996,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Petty",
+      "customer_id": 997,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Nielsen",
+      "customer_id": 998,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Doris",
+      "customer_id": 999,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Rosemarie",
+      "customer_id": 1000,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Latoya",
+      "customer_id": 1001,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Cherry",
+      "customer_id": 1002,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Schwartz",
+      "customer_id": 1003,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mamie",
+      "customer_id": 1004,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Opal",
+      "customer_id": 1005,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "May",
+      "customer_id": 1006,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Edwina",
+      "customer_id": 1007,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Bobbi",
+      "customer_id": 1008,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Palmer",
+      "customer_id": 1009,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mcmillan",
+      "customer_id": 1010,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Pennington",
+      "customer_id": 1011,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "James",
+      "customer_id": 1012,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Austin",
+      "customer_id": 1013,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Laurel",
+      "customer_id": 1014,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Silva",
+      "customer_id": 1015,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Byrd",
+      "customer_id": 1016,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jimenez",
+      "customer_id": 1017,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Albert",
+      "customer_id": 1018,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Sheppard",
+      "customer_id": 1019,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Susana",
+      "customer_id": 1020,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Hamilton",
+      "customer_id": 1021,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mays",
+      "customer_id": 1022,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Parks",
+      "customer_id": 1023,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Yvonne",
+      "customer_id": 1024,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Tasha",
+      "customer_id": 1025,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Denise",
+      "customer_id": 1026,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Fischer",
+      "customer_id": 1027,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Zimmerman",
+      "customer_id": 1028,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Davenport",
+      "customer_id": 1029,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Mari",
+      "customer_id": 1030,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Jerri",
+      "customer_id": 1031,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Vargas",
+      "customer_id": 1032,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sallie",
+      "customer_id": 1033,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Dora",
+      "customer_id": 1034,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Benjamin",
+      "customer_id": 1035,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Beth",
+      "customer_id": 1036,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Mullins",
+      "customer_id": 1037,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hunter",
+      "customer_id": 1038,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Diane",
+      "customer_id": 1039,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Walsh",
+      "customer_id": 1040,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Lott",
+      "customer_id": 1041,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Tillman",
+      "customer_id": 1042,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Morrow",
+      "customer_id": 1043,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gibbs",
+      "customer_id": 1044,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mejia",
+      "customer_id": 1045,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Burton",
+      "customer_id": 1046,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Shari",
+      "customer_id": 1047,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Wagner",
+      "customer_id": 1048,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Shields",
+      "customer_id": 1049,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Glover",
+      "customer_id": 1050,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Lopez",
+      "customer_id": 1051,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Aline",
+      "customer_id": 1052,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Russo",
+      "customer_id": 1053,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mosley",
+      "customer_id": 1054,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Pace",
+      "customer_id": 1055,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Mcfadden",
+      "customer_id": 1056,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Kim",
+      "customer_id": 1057,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Nadia",
+      "customer_id": 1058,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Leach",
+      "customer_id": 1059,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Carlson",
+      "customer_id": 1060,
+      "customer_geographic_location": "US West",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Margery",
+      "customer_id": 1061,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Richard",
+      "customer_id": 1062,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Gould",
+      "customer_id": 1063,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Meagan",
+      "customer_id": 1064,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Tamara",
+      "customer_id": 1065,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Barber",
+      "customer_id": 1066,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Oconnor",
+      "customer_id": 1067,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Kathrine",
+      "customer_id": 1068,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Beulah",
+      "customer_id": 1069,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Valenzuela",
+      "customer_id": 1070,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Alberta",
+      "customer_id": 1071,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Ortega",
+      "customer_id": 1072,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Dollie",
+      "customer_id": 1073,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Sofia",
+      "customer_id": 1074,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Padilla",
+      "customer_id": 1075,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Adele",
+      "customer_id": 1076,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cassandra",
+      "customer_id": 1077,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Hollie",
+      "customer_id": 1078,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Diaz",
+      "customer_id": 1079,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Barbara",
+      "customer_id": 1080,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Latasha",
+      "customer_id": 1081,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Cecile",
+      "customer_id": 1082,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Hardy",
+      "customer_id": 1083,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Herring",
+      "customer_id": 1084,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Schmidt",
+      "customer_id": 1085,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Gwendolyn",
+      "customer_id": 1086,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Terry",
+      "customer_id": 1087,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Jenifer",
+      "customer_id": 1088,
+      "customer_geographic_location": "US North",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Miranda",
+      "customer_id": 1089,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Berg",
+      "customer_id": 1090,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Oneill",
+      "customer_id": 1091,
+      "customer_geographic_location": "US East",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Wall",
+      "customer_id": 1092,
+      "customer_geographic_location": "US North",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Blanche",
+      "customer_id": 1093,
+      "customer_geographic_location": "US Pacific",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Howe",
+      "customer_id": 1094,
+      "customer_geographic_location": "US North",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Atkins",
+      "customer_id": 1095,
+      "customer_geographic_location": "US East",
+      "customer_type": "Wood"
+    },
+    {
+      "customer_name": "Natalia",
+      "customer_id": 1096,
+      "customer_geographic_location": "US East",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Lorraine",
+      "customer_id": 1097,
+      "customer_geographic_location": "US West",
+      "customer_type": "Steel"
+    },
+    {
+      "customer_name": "Marsh",
+      "customer_id": 1098,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    },
+    {
+      "customer_name": "Parrish",
+      "customer_id": 1099,
+      "customer_geographic_location": "US West",
+      "customer_type": "Small Utility"
+    }
+  ]

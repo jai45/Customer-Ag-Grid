@@ -1,0 +1,50 @@
+<div class="container">
+<h1 >Add Customer Details</h1>
+<form class="form-horizontal" #myform="ngForm">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="customer_name">Customer Name :</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="customer_name" name="customer_name" required>
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-sm-2" for="customer_id">Customer ID :</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="customer_id" name="customer_id" required> 
+        </div>
+     </div>
+     
+     <div class="form-group">
+        <label class="control-label col-sm-2" for="customer_geographic_location">Customer Geographic Location :</label>
+        <div class="col-sm-6">
+            <select class="form-control" [(ngModel)] ="customer_geographic_location" name="customer_geographic_location" required>
+                <option value="US West">US West</option>
+                <option value="US East">US East</option>
+                <option value="US North">US North</option>
+                <option value="US Pacific">US Pacific</option>
+              </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="customer_type">Customer Type :</label>
+        <div class="col-sm-6">
+            <select class="form-control" [(ngModel)]="customer_type" name="customer_type" required>
+                <option value="Small Utility">Small Utility</option>
+                <option value="Steel">Steel</option>
+                <option value="Wood">Wood</option>
+              </select>
+        </div>
+      </div>
+      <div id="alert" class="alert alert-danger" [hidden]="isFormValid">
+         Fill all the values
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" class="btn btn-default" (click)="addUser(myform)" >Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-default" routerLink=''>Cancel</button>
+        </div>
+      </div>
+</form>
+</div>
